@@ -14,6 +14,7 @@
 		1628B11D2AFD2C09002ED6DE /* PokemonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628B11C2AFD2C09002ED6DE /* PokemonTests.swift */; };
 		1628B1272AFD2C09002ED6DE /* PokemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628B1262AFD2C09002ED6DE /* PokemonUITests.swift */; };
 		1628B1292AFD2C09002ED6DE /* PokemonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628B1282AFD2C09002ED6DE /* PokemonUITestsLaunchTests.swift */; };
+		1628B1362AFD2E0D002ED6DE /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628B1352AFD2E0D002ED6DE /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1628B1222AFD2C09002ED6DE /* PokemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1628B1262AFD2C09002ED6DE /* PokemonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUITests.swift; sourceTree = "<group>"; };
 		1628B1282AFD2C09002ED6DE /* PokemonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1628B1352AFD2E0D002ED6DE /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		1628B10A2AFD2C07002ED6DE /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
+				1628B1352AFD2E0D002ED6DE /* Pokemon.swift */,
 				1628B10B2AFD2C07002ED6DE /* PokemonApp.swift */,
 				1628B10D2AFD2C07002ED6DE /* ContentView.swift */,
 				1628B10F2AFD2C08002ED6DE /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			files = (
 				1628B10E2AFD2C07002ED6DE /* ContentView.swift in Sources */,
 				1628B10C2AFD2C07002ED6DE /* PokemonApp.swift in Sources */,
+				1628B1362AFD2E0D002ED6DE /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

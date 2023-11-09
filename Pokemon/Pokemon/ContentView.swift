@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+	var pokemones : [PokemonResult] = MockData.pokemonesMock
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+		NavigationStack {
+			ZStack {
+				List(pokemones) { pokemon in
+					NavigationLink(destination:
+									Text(pokemon.name)
+									) {
+						Text(pokemon.name)
+					}
+				}
+			}
+			.navigationTitle("Pokemones")
+		}
     }
 }
 
