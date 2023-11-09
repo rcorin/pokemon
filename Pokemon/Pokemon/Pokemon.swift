@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct PokemonResult : Identifiable {
+struct Pokemon : Identifiable, Equatable {
 	var id: Int
 	var name: String
 	var urlString: String
 }
 
 struct MockData {
-	static let pokemonesMock : [PokemonResult] = [ PokemonResult(id: 1, name: "bulbasaur", urlString: "https://pokeapi.co/api/v2/pokemon/1/"),
-											PokemonResult(id: 2, name: "ivysaur", urlString: "https://pokeapi.co/api/v2/pokemon/2/"),
-											PokemonResult(id: 3, name: "venusaur", urlString: "https://pokeapi.co/api/v2/pokemon/3/")
+	static let pokemonesMock : [Pokemon] = [ Pokemon(id: 1, name: "bulbasaur", urlString: "https://pokeapi.co/api/v2/pokemon/1/"),
+											Pokemon(id: 2, name: "ivysaur", urlString: "https://pokeapi.co/api/v2/pokemon/2/"),
+											Pokemon(id: 3, name: "venusaur", urlString: "https://pokeapi.co/api/v2/pokemon/3/")
 	]
 }
 

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-	var pokemones : [PokemonResult] = MockData.pokemonesMock
+	@StateObject var viewModel = PokemonesViewModel()
     var body: some View {
 		NavigationStack {
 			ZStack {
-				List(pokemones) { pokemon in
+				List(viewModel.pokemones) { pokemon in
 					NavigationLink(destination:
 									Text(pokemon.name)
 									) {
@@ -21,12 +21,19 @@ struct ContentView: View {
 				}
 			}
 			.navigationTitle("Pokemones")
+			.task {
+				if viewModel.pokemones.count == 0 {
+					do {
+						try await viewModel.cargarPokemones()
+					} catch { }
+				}
+			}
 		}
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: PokemonesViewModel())
     }
 }
